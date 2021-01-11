@@ -1,4 +1,4 @@
-### Predicting Sales of Retail Stores in given Data
+### Demand forcast of Walmart in given Data
 Problem Statement
 
 Demand Forecast is one of the key tasks in Supply Chain and Retail Domain in general. It is key in effective operation and optimization of retail supply chain. 
