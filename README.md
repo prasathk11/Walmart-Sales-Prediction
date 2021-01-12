@@ -1,4 +1,7 @@
-### Demand forcast of Walmart in given Data
+### Forecasting Sales of Walmart in given Data
+
+<p align="center"><img src"https://github.com/Starkultra/Walmart-Sales-Prediction/blob/master/assets/walmart-store.jpg" width=30%><p>
+ 
 Problem Statement
 
 Demand Forecast is one of the key tasks in Supply Chain and Retail Domain in general. It is key in effective operation and optimization of retail supply chain. 
@@ -14,24 +17,24 @@ Also, other sale influencers like, whether on a particular day the store was ful
 
 Exploratory Data Analysis (EDA) and Linear Regression:
 
-1.      Transform the variables by using data manipulation techniques like, One-Hot Encoding 
-2.      Perform an EDA (Exploratory Data Analysis) to see the impact of variables over Sales.
+1.      Transformed the variables by using data manipulation techniques like, One-Hot Encoding 
+2.      Performed an EDA (Exploratory Data Analysis) to see the impact of variables over Sales.
 3.      Apply Linear Regression to predict the forecast and evaluate different accuracy metrices like RMSE (Root Mean Squared Error)
          and MAE(Mean Absolute Error) and determine which metric makes more sense. Can there be a better accuracy metric?
          a)      Train a single model for all stores, using storeId as a feature.
          b)      Train separate model for each store.
-         c)      Which performs better and Why? [In the first case, parameters are shared and not very free but not in second case]
-         d)      Try Ensemble of b) and c). What are the findings?
-         e)      Use Regularized Regression. It should perform better in an unseen test set. Any insights??
+         c)      Observation from previous 3 models **Second one performs better than first one [In the first case, parameters are shared and not very free but not in second case]**
+         d)      Try Ensemble of b) and c). **No improvement**
+         e)      Use Regularized Regression. It should perform better in an unseen test set. **No Improvement**
          f)      Open-ended modeling to get possible predictions.
 
 
 Other Regression Techniques:
 
-1. When store is closed, sales = 0. Can this insight be used for Data Cleaning? Perform this and retrain the model. Any benefits of this step?
-2. Use Non-Linear Regressors like Random Forest or other Tree-based Regressors.
-       a)    Train a single model for all stores, where storeId can be a feature.
-       b)    Train separate models for each store.
+1. When store is closed, sales = 0. used this insight be used for Data Cleaning Perform this and retrain the model.
+2. Use Non-Linear Regressors like Random Forest or other Tree-based Regressors(XGBoostRegressor).
+       a)    Trained a single model for all stores, where storeId can be a feature.
+       b)    Trained separate models for each store.
        Note: Dimensional Reduction techniques like, PCA and Tree’s Hyperparameter Tuning will be required. Cross-validate to find the
                   best parameters. Infer the performance of both the models. 
 3 Compare the performance of Linear Model and Non-Linear Model from the previous observations. Which performs better and why?
@@ -43,10 +46,9 @@ Other Regression Techniques:
 Implementing Neural Networks:
 
 Train a LSTM on the same set of features and compare the result with traditional time-series model.
-Comment on the behavior of all the models you have built so far
 Cluster stores using sales and customer visits as features. Find out how many clusters or groups are possible. Also visualize the results.
 Is it possible to have separate prediction models for each cluster? Compare results with the previous models.
-Project Task: Week 4
+
 
 Applying ANN:
 
