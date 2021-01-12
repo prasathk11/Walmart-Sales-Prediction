@@ -1,6 +1,6 @@
-### Forecasting Sales of Walmart in given Data
+<h2 align="center"> Forecasting Sales of Walmart in given Data </h2>
 
-<p align="center"><img src"https://github.com/Starkultra/Walmart-Sales-Prediction/blob/master/assets/walmart-store.jpg" width=30%><p>
+<p align="center"><img src="https://github.com/Starkultra/Walmart-Sales-Prediction/blob/master/assets/walmart-store.jpg" width=50%></p>
  
 Problem Statement
 
@@ -19,17 +19,16 @@ Exploratory Data Analysis (EDA) and Linear Regression:
 
 1.      Transformed the variables by using data manipulation techniques like, One-Hot Encoding 
 2.      Performed an EDA (Exploratory Data Analysis) to see the impact of variables over Sales.
-3.      Apply Linear Regression to predict the forecast and evaluate different accuracy metrices like RMSE (Root Mean Squared Error)
+3.      Applied Linear Regression to predict the forecast and evaluate different accuracy metrices like RMSE (Root Mean Squared Error)
          and MAE(Mean Absolute Error) and determine which metric makes more sense. Can there be a better accuracy metric?
          a)      Train a single model for all stores, using storeId as a feature.
          b)      Train separate model for each store.
          c)      Observation from previous 3 models **Second one performs better than first one [In the first case, parameters are shared and not very free but not in second case]**
          d)      Try Ensemble of b) and c). **No improvement**
          e)      Use Regularized Regression. It should perform better in an unseen test set. **No Improvement**
-         f)      Open-ended modeling to get possible predictions.
 
 
-Other Regression Techniques:
+Other Regression Techniques(Random forest regressor and XGBoostRegressor):
 
 1. When store is closed, sales = 0. used this insight be used for Data Cleaning Perform this and retrain the model.
 2. Use Non-Linear Regressors like Random Forest or other Tree-based Regressors(XGBoostRegressor).
